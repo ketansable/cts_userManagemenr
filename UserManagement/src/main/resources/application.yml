@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: UserManagement
+  datasource:
+    url: jdbc:mysql://localhost:3306/cts_assignment
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  mail:
+    host: smtp.example.com
+    port: 587
+    username: your-email@example.com
+    password: your-email-password
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+jwt:
+  secret: your_secret_key
+  expiration: 86400000 # 24 hours
+server:
+  port: 8082
